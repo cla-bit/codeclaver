@@ -230,10 +230,10 @@ main {
 
 /* =============== HEADLINE BANNER STYLES =============== */
 .header-banner {
-    background: url("/img/background-2.png");
+    background: url("./img/background-2.png");
 }
 .course-banner {
-    background: url("/img/background-4.png");
+    background: url("./img/background-4.png");
 }
 .banner {
     background-repeat: no-repeat;
@@ -669,7 +669,7 @@ main {
 /* =============== Our pdf ============= */
 .our-pdf {
     margin-top: 30px;
-    background: url("/img/magicpattern-grid-pattern-1715351392430.png");
+    background: url("./img/magicpattern-grid-pattern-1715351392430.png");
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
