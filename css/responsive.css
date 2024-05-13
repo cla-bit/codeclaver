@@ -1,0 +1,143 @@
+/* ============MEDIA QUERY ========== */
+@media (prefers-color-scheme: dark) {
+
+    .menu_ul_items,
+    .register-btn {
+        background: linear-gradient(140deg, rgba(21, 66, 185, 1) 40%, rgba(27, 63, 157, 1) 65%, rgba(23, 50, 120, 1) 100%);
+    }
+
+}
+
+@media (max-width: 1024px) {
+    nav {
+    }
+    .nav_logo {
+        width: 150px;
+    }
+
+    nav,
+    .login-btn {
+        display: none;
+    }
+    
+    .menu-toggle,
+    .menu_ul_items.active {
+        display: block;
+    }
+    .banner {
+        background: transparent;
+        align-content: center;
+        justify-content: center;
+        padding: 30px 20px;
+        height: max-content;
+    }
+    .banner .text {
+        right: 0;
+        width: 100%;
+    }
+    .banner .text p {
+        text-align: left;
+    }
+    .banner .text h3 {
+        line-height: 2rem;
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .why-us h1,
+    .course-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .course-grid-cards {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        padding: 0 20px;
+    }
+
+    .our-pdf {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .our-pdf .text h4 {
+        line-height: 40px;
+        font-size: 2rem;
+        margin: 30px 20px;
+    }
+
+    .our-pdf .text h4 span {
+        font-size: 3rem;
+    }
+
+    .our-pdf .text p {
+        margin: 0 20px;
+    }
+
+    .our-pdf .our-pdf-image {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .book {
+        margin: 25px 0;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .glass {
+        width: 200px;
+        height: 290px;
+        margin: 0 -45px;
+    }
+
+    .about-section h1 {
+        padding-bottom: 10px;
+    }
+    .about-grid-cards {
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 412px) {
+    footer p,
+    .terms-container a,
+    .terms-container>span {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 300px) {
+    .container {
+        height: 300px;
+    }
+
+    .container .glass {
+        width: 160px;
+        height: 240px;
+        margin: 0 -45px;
+    }
+    .why-us-grid .text h4 {
+        line-height: 25px;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .why-us-grid .text p {
+        font-size: 1.3rem;
+        text-transform: initial;
+        margin-top: 10px;
+    }
+    .about-grid-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 20px;
+    }
+}
