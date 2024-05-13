@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menuList.classList.toggle('active');
     overlay.classList.toggle('active');
     menuToggle.setAttribute('aria-expanded', menuList.classList.contains('active'));
-    const menuIcon = menuToggle.querySelector('.material-icons');
+    const menuIcon = menuToggle.querySelector('.material-icons-outlined');
     menuIcon.textContent = menuList.classList.contains('active') ? 'close' : 'menu';
     menuIcon.style.color = menuList.classList.contains('active') ? 'white' : '';
   }
