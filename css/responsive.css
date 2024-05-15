@@ -137,6 +137,10 @@
 }
 
 @media (max-width: 412px) {
+    nav {
+        min-width: 100%;
+    }
+    
     footer p,
     .terms-container a,
     .terms-container>span {
@@ -146,9 +150,7 @@
 }
 
 @media (max-width: 300px) {
-    nav {
-        min-width: 100%;
-    }
+
     .container {
         height: 300px;
     }
