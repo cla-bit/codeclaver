@@ -34,6 +34,13 @@
         color: var(--white);
     }
 
+    .nav_ul__items a {
+        width: 100%;
+    }
+    .nav_ul__items > li {
+        display: flex;
+    }
+
     .nav_logo {
         width: 150px;
     }
