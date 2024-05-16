@@ -105,7 +105,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 2;
-    background: var(--white);
+    background: var(--light-mode-background-color);
     transition: all 0.5s ease;
     display: flex;
     align-items: center;
