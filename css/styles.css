@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Canadian+Aboriginal&display=swap');
+u@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Canadian+Aboriginal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
@@ -1607,12 +1607,12 @@ nav {
     font-size: 1.3rem;
     margin: 10px 0;
 }
-.terms {
+.order-terms {
     display: inline-flex;
     flex-direction: column;
     margin-top: 20px;
 }
-.terms a {
+.order-terms a {
     font-size: 1rem;
     color: var(--dark-blue);
 }
