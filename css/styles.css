@@ -1561,12 +1561,10 @@ nav {
 .order-section {
     margin: 0 auto;
     width: min(100%, 1000px);
-    border: 3px solid red;
 }
 .order {
     padding: 10px;
     margin: 10px 0;
-    border: 3px solid blue;
 }
 .order-grid {
     display: grid;
@@ -1609,19 +1607,25 @@ nav {
     font-size: 1.3rem;
     margin: 10px 0;
 }
-.terms {
-    display: inline-flex;
-    flex-direction: column;
-    margin-top: 20px;
+.order-terms {
+    display: block;
+    margin-top: 60px;
 }
-.terms a {
+.order-terms a {
     font-size: 1rem;
     color: var(--dark-blue);
 }
 
-.payment-info {
-    border: 3px solid blue;
-    width: min(100%, 500px);
+.pay-input img {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    object-fit: fill;
+    aspect-ratio: 1;
+}
+.small-text-pay {
+    font-size: 1rem;
+    text-align: center;
 }
 /* ================ FOOTER STYLES ============ */
 footer {
