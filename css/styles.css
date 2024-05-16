@@ -293,7 +293,7 @@ nav {
 
 
 /* ============ MAIN STYLES ===================== */
-main {
+.main-section {
     margin: 100px 0 50px 0;
     padding: 0;
 }
@@ -1557,7 +1557,65 @@ main {
     aspect-ratio: 1;
 }
 
-
+/* ========== ORDER STYLES ========*/
+.order-section {
+    margin: 0 auto;
+    width: min(100%, 1000px);
+}
+.order {
+    padding: 10px;
+    margin: 10px 0;
+}
+.order-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+.order-pay-info {
+    position: relative;
+    display: block;
+}
+.order-pay-info .order-img {
+    height: 300px;
+    margin-bottom: 20px;
+    object-fit: fill;
+    aspect-ratio: 1;
+}
+.order-pay-info h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.order-pay-info p {
+    font-size: 1.3rem;
+}
+.order-info {
+    margin: 20px;
+    background: #fff;
+    border: 3px dotted var(--dark-blue);
+    border-radius: 5px;
+    padding: 9px;
+}
+.order-info p {
+    font-size: 1rem;
+}
+.order-form {
+    box-shadow: -1px 6px 16px -3px rgba(0, 0, 0, 0.31);
+}
+.order-btn {
+    padding: 20px;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+.terms {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.terms a {
+    font-size: 1rem;
+    color: var(--dark-blue);
+}
 /* ================ FOOTER STYLES ============ */
 footer {
     margin-top: 30px;

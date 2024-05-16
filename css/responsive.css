@@ -134,11 +134,20 @@
     .book {
         margin: 25px 0;
     }
+}
 
+@media (max-width: 820px) {
+    .order-pay-info .order-img {
+        height: 200px;
+    }
 }
 @media (max-width: 767px) {
-    .course-detail-grid-cards {
+    .course-detail-grid-cards,
+    .order-grid {
         grid-template-columns: 1fr;
+    }
+    .order-form {
+        width: 100%;
     }
 }
 @media (max-width: 440px) {
@@ -241,5 +250,20 @@
     .course-img-thumbnail {
         height: 70px;
         width: 70px;
+    }
+    .order-pay-info .order-img {
+        height: 130px;
+    }
+    .order-pay-info h4 {
+        font-size: 1.6rem;
+    }
+    .order-pay-info p {
+        font-size: 1rem;
+    }
+    .order-form .header {
+        font-size: 1.5rem;
+    }
+    .order-btn {
+        font-size: 1rem;
     }
 }
