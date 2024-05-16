@@ -1,4 +1,4 @@
-u@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Canadian+Aboriginal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Canadian+Aboriginal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
@@ -1561,10 +1561,12 @@ nav {
 .order-section {
     margin: 0 auto;
     width: min(100%, 1000px);
+    border: 3px solid red;
 }
 .order {
     padding: 10px;
     margin: 10px 0;
+    border: 3px solid blue;
 }
 .order-grid {
     display: grid;
@@ -1607,14 +1609,19 @@ nav {
     font-size: 1.3rem;
     margin: 10px 0;
 }
-.order-terms {
+.terms {
     display: inline-flex;
     flex-direction: column;
     margin-top: 20px;
 }
-.order-terms a {
+.terms a {
     font-size: 1rem;
     color: var(--dark-blue);
+}
+
+.payment-info {
+    border: 3px solid blue;
+    width: min(100%, 500px);
 }
 /* ================ FOOTER STYLES ============ */
 footer {
