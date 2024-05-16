@@ -36,4 +36,44 @@ $(document).ready(function() {
     menuIcon.css("color", menuList.hasClass("active") ? "white" : "");
   }
 
+  // accordion javascript
+
+  const accordionContent = $(".accordion_content");
+
+  accordionContent.each(function(index, item) {
+    const accordionHeader = $(item).find(".accordion_header");
+    const accordionItem = $(item).find(".accordion_item");
+    const accordionIcon = $(item).find(".material-symbols-outlined");
+
+    accordionHeader.click(function() {
+      $(item).toggleClass("open");
+
+      if ($(item).hasClass("open")) {
+        accordionItem.css("height", accordionItem.prop("scrollHeight") + "px")
+        accordionIcon.text($(item).hasClass("open") ? "expand_circle_up" : "expand_circle_down");
+      } else {
+        accordionItem.css("height", "0px");
+        accordionIcon.text("expand_circle_down");
+      }
+
+      // close other accordion item efficiently
+
+      accordionContent.not(item).removeClass("open");
+      accordionContent.not(item).find(".accordion_item").css("height", "0px");
+      accordionContent.not(item).find(".material-symbols-outlined").text("expand_circle_down");
+
+    });
+  });
+  // function removeOpen(index) {
+  //   accordionContent.each(function(item2, index2) {
+  //     if (index !== index2) {
+  //       $(item2).removeClass("open");
+
+  //       const innerItem = $(item2).find(".accordion_item");
+  //       innerItem.css("height", "0px");
+  //       accordionIcon.text("expand_circle_down");
+  //     }
+  //   })
+  // }
+
 });

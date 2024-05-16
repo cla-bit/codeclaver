@@ -48,16 +48,36 @@ img {
     height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 2rem;
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    font-family: 'Noto Sans Canadian Aboriginal', nunito, sans-serif;
+    color: var(--dark-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
     font-family: 'Noto Sans Canadian Aboriginal', nunito, sans-serif;
+    color: var(--dark-blue);
 }
 
 p {
     font-size: 1.6rem;
     font-weight: 500;
-    font-family: 'Noto Sans Canadian Aboriginal', nunito, sans-serif;
+}
+
+hr {
+    border: 1px solid #8f8e8e7d;
+    margin: 5px 0;
 }
 
 .icon {
@@ -98,7 +118,7 @@ header {
 }
 #header.scrolled .nav_logo {
     height: 50px;
-    width: 280px;
+    width: 200px;
 }
 
 .nav_logo {
@@ -284,6 +304,9 @@ main {
 }
 .course-banner {
     background: url("/img/background-4.png");
+}
+.detail-banner {
+    background: url("/img/background-6.png");
 }
 .banner {
     background-repeat: no-repeat;
@@ -1113,10 +1136,6 @@ main {
     /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
 }
 
-
-
-
-
 /* =============== LOGIN FORM STYLES =============== */
 .form-section {
     display: grid;
@@ -1320,6 +1339,224 @@ main {
 .modal-3 a:active {
     background-color: var(--dark-blue);
 }
+
+/* ================= DETAIL PAGE STYLES ========== */
+.course-content {
+    margin: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.detail-banner {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+}
+.detail-banner .text {
+    right: 0;
+}
+.course-detail-grid-cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 0 30px;
+}
+.detail-grid-item {
+    position: relative;
+    display: block;
+}
+.course-detail-img {
+    height: 300px;
+    object-fit: fill;
+    aspect-ratio: 1;
+    object-position: center;
+}
+.detail_course_modules {
+    margin-top: 20px;
+}
+.detail_course_modules h3 {
+    color: var(--dark-blue);
+    padding: 10px;
+    text-align: center;
+}
+.pre-requisite {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+}
+.pre-requisite h6 {
+    padding: 5px;
+    display: inline-flex;
+
+}
+
+.pre-requisite .icon {
+    color: green;
+}
+.pre_item_ul li {
+    padding: 3px;
+    margin: 3px 0;
+    font-size: 1.156rem;
+    display: flex;
+    align-items: center;
+}
+.pre_items_li .icon {
+    color: var(--dark-blue);
+    font-size: 1rem;
+}
+.accordion {
+    padding: 10px;
+    background: var(--white);
+    margin-bottom: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+.accordion_content {
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0;
+    border-radius: 6px;
+    background: #ebebeb;
+    box-shadow: -1px 6px 16px -3px rgba(0, 0, 0, 0.4);
+}
+.accordion_content.open {
+    padding-bottom: 15px;
+    background: var(--white);
+}
+.accordion_content.open .accordion_header {
+    min-height: 20px;
+    background: #ebebeb;
+}
+
+.accordion_content.open .accordion_item {
+    padding: 5px;
+}
+
+.accordion_item {
+    padding: 0;
+    height: 0;
+    transition: all 0.5s linear;
+    background: var(--white);
+}
+.accordion_item li{
+    color: var(--dark-blue);
+}
+.accordion_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    min-height: 30px;
+    transition: all 0.5s linear;
+    color: var(--dark-blue);
+}
+
+.other-details {
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: -1px 6px 11px -3px rgba(0, 0, 0, 0.22);
+}
+.brief-description h6 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.brief-description p {
+    font-size: 1.2rem;
+}
+.what-to-learn h6{
+    display: inline-flex;
+    align-items: center;
+}
+.what-to-learn ul{
+    margin-top: 5px;
+}
+.what-to-learn ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.15rem;
+    line-height: 10px;
+    margin: 3px 0;
+}
+.what-to-learn ul li > .icon {
+    font-size: 1rem;
+    columns: var(--dark-blue);
+}
+.pre-video {
+    height: 200px;
+}
+.price-tag {
+    padding: 10px;
+}
+.price {
+    font-size: 2.7rem;
+    color: var(--black);
+}
+.buy {
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+.buy a {
+    width: 100%;
+    font-weight: 700;
+    padding: 13px;
+    background: var(--md-blue);
+    color: var(--white);
+}
+.refund {
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px 0;
+    font-weight: 600;
+}
+.more-details h6 {
+    margin: 10px 0;
+}
+.more-details li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.more-details .icon {
+    font-size: 1.5rem;
+    margin-right: 3px;
+}
+.other-courses {
+    margin-top: 8px;
+}
+.other-courses h3 {
+    margin: 20px 10px;
+    font-size: 1.6rem;
+}
+.course-thumb {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--white);
+    box-shadow: -1px 6px 16px -3px rgba(0, 0, 0, 0.31);
+    padding: 5px;
+}
+.course-thumb-detail h5{
+    padding: 2px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--dark-blue);
+}
+.course-thumb-detail p{
+    font-size: 1.22rem;
+    padding: 5px 0;
+}
+
+.course-img-thumbnail {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
 
 /* ================ FOOTER STYLES ============ */
 footer {
